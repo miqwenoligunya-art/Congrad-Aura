@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎓 Congratulations Oratile Theri Aura Helepi 🎓</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #172255 0%, #0b226d 50%, #4388a8 100%);
+    background-size: 300% 300%;
+    animation: gradientShift 12s ease infinite;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Floating grad caps */
+  .cap {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0.85;
+    animation: floatUp linear infinite;
+    user-select: none;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+  }
+
+  @keyframes floatUp {
+    0%   { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.9; }
+    90%  { opacity: 0.9; }
+    100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+  }
+
+  /* Confetti dots */
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    animation: confettiFall linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes confettiFall {
+    0%   { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* Card */
+  .card {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 28px;
+    padding: 60px 50px;
+    text-align: center;
+    max-width: 720px;
+    margin: 20px;
+    box-shadow:
+      0 25px 60px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    animation: cardPop 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes cardPop {
+    0%   { transform: scale(0.6) translateY(40px); opacity: 0; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+  }
+
+  .caps-row {
+    font-size: 3rem;
+    letter-spacing: 12px;
+    margin-bottom: 20px;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    text-shadow:
+      0 4px 20px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(255, 255, 255, 0.4);
+    margin-bottom: 18px;
+  }
+
+  .name {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffd700, #ffec80, #ffd700);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    font-weight: 900;
+  }
+
+  @keyframes shine {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .aura {
+    font-style: italic;
+    color: #fff5b8;
+    -webkit-text-fill-color: #fff5b8;
+    background: none;
+    text-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
+  }
+
+  .message {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 24px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    margin: 24px auto;
+    border-radius: 2px;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="caps-row">🎓 🎉 🎓</div>
+    <div class="subtitle">Congratulations</div>
+    <h1>
+      <span class="name">Oratile Theri</span>
+      <span class="name aura"> Aura </span>
+      <span class="name">Helepi</span>
+    </h1>
+    <div class="divider"></div>
+    <p class="message">
+      You did it! 💙 This moment is yours — every late night, every effort,
+      every step led here. Be proud of how far you've come.
+      The world is yours to conquer. 🎓✨
+    </p>
+    <div class="footer">🎓 The Tassle was worth the Hassle  🎓</div>
+  </div>
+
+<script>
+  // Floating grad caps
+  const capEmojis = ['🎓', '🎓', '🎉', '🎓', '✨', '🎓'];
+  for (let i = 0; i < 18; i++) {
+    const cap = document.createElement('div');
+    cap.className = 'cap';
+    cap.textContent = capEmojis[Math.floor(Math.random() * capEmojis.length)];
+    cap.style.left = Math.random() * 100 + 'vw';
+    cap.style.fontSize = (1.8 + Math.random() * 2) + 'rem';
+    cap.style.animationDuration = (7 + Math.random() * 8) + 's';
+    cap.style.animationDelay = (Math.random() * 10) + 's';
+    document.body.appendChild(cap);
+  }
+
+  // Confetti
+  const colors = ['#ffd700', '#ff6b9d', '#4ecdc4', '#ffe66d', '#a78bfa', '#ffffff'];
+  for (let i = 0; i < 60; i++) {
+    const c = document.createElement('div');
+    c.className = 'confetti';
+    c.style.left = Math.random() * 100 + 'vw';
+    c.style.background = colors[Math.floor(Math.random() * colors.length)];
+    c.style.width = (6 + Math.random() * 8) + 'px';
+    c.style.height = (6 + Math.random() * 8) + 'px';
+    c.style.animationDuration = (4 + Math.random() * 6) + 's';
+    c.style.animationDelay = (Math.random() * 8) + 's';
+    if (Math.random() > 0.6) c.style.borderRadius = '50%';
+    document.body.appendChild(c);
+  }
+</script>
+</body>
+</html>
